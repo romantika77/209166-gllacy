@@ -1,0 +1,15 @@
+body {
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+	font-weight: normal;
+	font-family: "Poboto", "Arial", sans-serif;
+}
+
+h1, h2 {
+	font-size: 35px;
+	line-height: 41px;
+	/*color: #ffffff;*/
+	font-weight: bold;
+	font-family: "Poboto", "Arial", sans-serif;
+}

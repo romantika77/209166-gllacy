@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Глейси-магазин: главная</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
@@ -10,7 +11,7 @@
         <header class="page-header">
           <nav class="main-navigation">
             <div class="header-logo">
-              <img src="http://placehold.it/150x100" alt="gllacy-logo">
+              <a><img src="img/gllacy-logo.png" width="154" height="64" alt="gllacy-logo"></a>
             </div>
             <ul class="menu">
               <li>
@@ -43,17 +44,9 @@
             <ul class="user-block">
               <li>
                 <a class="search" href="#">Поиск</a>
-                <form action="#" method="post">
-                  <label><input type="search" name="search" placeholder="Что ищем?"></label>
-                </form>
               </li>
               <li>
                 <a class="login" href="#">Вход</a>
-                <form action="#" method="post">
-                  <label><input type="email" name="login" placeholder="Электронная почта"></label>
-                  <label><input type="password" name="password"></label>
-                  <input class="btn btn-form" type="submit" value="Войти">
-                </form>
               </li>
               <li>
                 <a href="#">Пусто</a>
@@ -99,22 +92,22 @@
         <div class="hits">
           <div class="hits-item item-1">
             <div class="flag"></div>
-            <img src="http://placehold.it/150x100" alt="Сливочное с апельсиновым джемом">
+            <img src="img/creamy_with_orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом">
             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </div>
           <div class="hits-item item-2">
             <div class="flag"></div>
-            <img src="http://placehold.it/150x100" alt="Сливочно-кофейное">
+            <img src="img/creamy-coffee.jpg" width="267" height="267" alt="Сливочно-кофейное">
             <p>Сливочно-кофейное с кусочками шоколада</p>
           </div>
           <div class="hits-item item-3">
             <div class="flag"></div>
-            <img src="http://placehold.it/150x100" alt="Сливочно-клубничное">
+            <img src="img/creamy-strawberry.jpg" width="267" height="267 alt="Сливочно-клубничное">
             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           </div>
           <div class="hits-item item-4">
             <div class="flag"></div>
-            <img src="http://placehold.it/150x100" alt="Сливочное крем-брюле">
+            <img src="img/creamy_with_caramel.jpg" width="267" height="267 alt="Сливочное крем-брюле">
             <p>Сливочное крем-брюле с карамельной подливкой</p>
           </div>
         </div>
@@ -180,13 +173,30 @@
     </div>
 
     <div class="modal-feedback">
-    <form action="#" method="post">
-      <p>Мы обязательно вам ответим!</p>
-      <label><input type="text" name="fullname" placeholder="Как вас зовут?"></label>
-      <label><input type="email" name="email" placeholder="Ваша почта для ответа?"></label>
-      <textarea name="letter" id="letter-field" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-      <input class="btn btn-form" type="submit" value="Отправить">
-    </form>
+      <form action="#" method="post">
+        <p>Мы обязательно вам ответим!</p>
+        <label><input type="text" name="fullname" placeholder="Как вас зовут?"></label>
+        <label><input type="email" name="email" placeholder="Ваша почта для ответа?"></label>
+        <textarea name="letter" id="letter-field" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+        <input class="btn btn-form" type="submit" value="Отправить">
+      </form>
     </div>
+
+    <div class="modal-login">
+      <form action="#" method="post">
+        <label><input type="email" name="login" placeholder="Электронная почта"></label>
+        <label><input type="password" name="password"></label>
+        <input class="btn btn-form" type="submit" value="Войти">
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </form>
+    </div>
+    
+    <div class="modal-search">
+      <form action="#" method="post">
+        <label><input type="search" name="search" placeholder="Что ищем?"></label>
+      </form>
+    </div>
+
   </body>
 </html>
