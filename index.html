@@ -20,13 +20,13 @@
             </div>
             <ul class="menu">
               <li class="catalog">
-                <a href="#"><span class="underline">Каталог</span></a>
+                <a href="catalog.html"><span class="underline">Каталог</span></a>
                 <ul class="sub-menu">
                   <li>
                     <a class="new" href="#">Новинки</a>
                   </li>
                   <li>
-                    <a href="#">Сливочное</a>
+                    <a href="catalog.html">Сливочное</a>
                   </li>
                   <li>
                     <a href="#">Щербеты</a>
@@ -51,7 +51,8 @@
                 <a class="button-search" href="#"><span class="visually-hidden">Поиск</span></a>
                 <div class="modal-search">
                   <form action="#" method="post">
-                    <label><input type="search" name="search" placeholder="Что ищем?"></label>
+                    <input type="search" name="search" id="search-field" required>
+                    <label for="search-field">Что ищем?</label>
                   </form>
                 </div>
               </li>
@@ -59,12 +60,14 @@
                 <a class="button-login" href="#">Вход</a>
                 <div class="modal-login">
                   <form action="#" method="post">
-                    <label><input type="email" name="login" placeholder="Электронная почта"></label>
-                    <label><input type="password" name="password" placeholder="Пароль"></label>
+                    <input id="login-field" type="email" name="login" required>
+                    <label for="login-field">Электронная почта</label>
+                    <input id="password-field" type="password" name="password" required>
+                    <label for="password-field">Пароль</label>
                     <input class="btn btn-login" type="submit" value="Войти">
                     <div class="login-links">
-                      <a href="#"><span class="underline">Забыли пароль?</span></a>
-                      <a href="#"><span class="underline">Новая регистрация</span></a>
+                      <a class="modal-link" href="#"><span class="underline">Забыли пароль?</span></a>
+                      <a class="modal-link" href="#"><span class="underline">Новая регистрация</span></a>
                     </div>
                   </form>
                 </div>
@@ -119,24 +122,28 @@
             <img src="img/creamy-with-orange.png" width="267" height="267" alt="Сливочное с апельсиновым джемом">
             <p><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></p>
             <span class="price">310<span class="roubles">/кг</span></span>
+            <a href="#" class="btn btn-hover">Быстрый просмотр</a>
           </div>
           <div class="hits-item item-2">
             <div class="flag"><span class="visually-hidden">Хит</span></div>
             <img src="img/creamy-with-coffee.png" width="267" height="267" alt="Сливочно-кофейное">
             <p><span class="underline">Сливочно-кофейное с кусочками шоколада</span></p>
             <span class="price">380<span class="roubles">/кг</span></span>
+            <a href="#" class="btn btn-hover">Быстрый просмотр</a>
           </div>
           <div class="hits-item item-3">
             <div class="flag"><span class="visually-hidden">Хит</span></div>
             <img src="img/creamy-strawberry.png" width="267" height="267" alt="Сливочно-клубничное">
             <p><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></p>
             <span class="price">355<span class="roubles">/кг</span></span>
+            <a href="#" class="btn btn-hover">Быстрый просмотр</a>
           </div>
           <div class="hits-item item-4">
             <div class="flag"><span class="visually-hidden">Хит</span></div>
             <img src="img/creamy-caramel.png" width="267" height="267" alt="Сливочное крем-брюле">
             <p><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></p>
             <span class="price">415<span class="roubles">/кг</span></span>
+            <a href="#" class="btn btn-hover">Быстрый просмотр</a>
           </div>
         </div>
 
@@ -159,42 +166,45 @@
             <div class="subscribe">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form action="#" method="post">
-              <label><input type="email" name="email" placeholder="Электронная почта"></label>
-              <input class="btn btn-subscribe" type="submit" value="Отправить">
+                <input id="subscribe-field" type="email" name="email" required>
+                <label for="subscribe-field">Электронная почта</label>
+                <input class="btn btn-subscribe" type="submit" value="Отправить">
               </form>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="map">
-          <div class="contacts">
-            <p>Адрес главного офиса и офлайн магазина:</p>
-            <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-            <p>Для заказов по телефону:</p>
-            <p><span class="phone">8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
-            <a href="#" class="btn">Форма обратной связи</a>
-          </div>
+      <div class="map">
+        <div class="contacts">
+          <p>Адрес главного офиса и офлайн магазина:</p>
+          <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+          <p>Для заказов по телефону:</p>
+          <p class="phone">8 812 450-25-25</p>
+          <p>(с 10 до 20 ежедневно)</p>
+          <a href="#" class="btn btn-feedback">Форма обратной связи</a>
         </div>
+      </div>
 
+      <div class="content-wrapper">
         <footer class="page-footer">
           <div class="footer-socials">
             <a href="#" class="social-btn social-btn-tw"><span class="visually-hidden">Твиттер</span></a>
-            <a href="#" class="social-btn social-btn-fb"><span class="visually-hidden">Фейсбук</span></a>
             <a href="#" class="social-btn social-btn-inst"><span class="visually-hidden">Инстаграмм</span></a>
+            <a href="#" class="social-btn social-btn-fb"><span class="visually-hidden">Фейсбук</span></a>
             <a href="#" class="social-btn social-btn-vk"><span class="visually-hidden">Вконтакте</span></a>
           </div>
           <div class="footer-info">
-              <a href="#"><span class="underline"><b>Для поставщиков</b></span> </a>
-              <a href="#"><span class="underline">Наши документы</span> </a>
-              <a href="#"><span class="underline">О производстве</span> </a>
-              <a href="#"><span class="underline">Экологические стандарты</span> </a>
+              <a class="current link-info" href="#"><span class="underline">Для поставщиков</span></a>
+              <a class="link-info" href="#"><span class="underline">Наши документы</span></a>
+              <a class="link-info" href="#"><span class="underline">О производстве</span></a>
+              <a class="link-info" href="#"><span class="underline">Экологические стандарты</span></a>
           </div>
           <div class="footer-copyright">
             <img src="img/html-logo-white.png" width="108" height="38" alt="Html-academy">
-            <p>Сделано в <span class="underline">HTML Academy</span>© 2017</p>
+            <p>Сделано в <a class="link-copyright" href="https://htmlacademy.ru/"><span class="underline">HTML Academy</span></a> © 2017</p>
           </div>
-        </footer>
-        
+        </footer> 
       </div>
     </div>
 
@@ -202,16 +212,15 @@
       <form action="#" method="post">
         <button class="modal-feedback-close" type="button" name="close"><span class="visually-hidden">Закрыть</span></button>
         <p class="title">Мы обязательно вам ответим!</p>
-        <label><input type="text" name="fullname" placeholder="Как вас зовут?"></label>
-        <label><input type="email" name="email" placeholder="Ваша почта для ответа?"></label>
-        <textarea name="letter" id="letter-field" placeholder="Напишите что-нибудь..."></textarea>
+        <input id="fullname-field" type="text" name="fullname" required>
+        <label for="fullname-field">Как вас зовут?</label>
+        <input id="email-field" type="email" name="email" required>
+        <label for="email-field">Ваша почта для ответа?</label>
+        <textarea name="letter" id="letter-field" required></textarea>
+        <label for="letter-field">Напишите что-нибудь...</label>
         <input class="btn btn-form" type="submit" value="Отправить">
       </form>
     </div>
-
-
-    
-
 
   </body>
 </html>
