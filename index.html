@@ -5,7 +5,7 @@
     <title>Глейси-магазин: главная</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -176,6 +176,7 @@
       </div>
 
       <div class="map">
+        <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3017385452504!2d30.32273461122162!3d59.938721628200305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1498652981986" height="430" style="border:0" allowfullscreen></iframe>
         <div class="contacts">
           <p>Адрес главного офиса и офлайн магазина:</p>
           <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -208,19 +209,23 @@
       </div>
     </div>
 
-    <div class="modal-feedback clearfix">
-      <form action="#" method="post">
-        <button class="modal-feedback-close" type="button" name="close"><span class="visually-hidden">Закрыть</span></button>
-        <p class="title">Мы обязательно вам ответим!</p>
-        <input id="fullname-field" type="text" name="fullname" required>
-        <label for="fullname-field">Как вас зовут?</label>
-        <input id="email-field" type="email" name="email" required>
-        <label for="email-field">Ваша почта для ответа?</label>
-        <textarea name="letter" id="letter-field" required></textarea>
-        <label for="letter-field">Напишите что-нибудь...</label>
-        <input class="btn btn-form" type="submit" value="Отправить">
-      </form>
+    <div class="modal-overlay">
+      <div class="modal-feedback clearfix">
+        <form action="#" method="post">
+          <button class="modal-feedback-close" type="button" name="close"><span class="visually-hidden">Закрыть</span></button>
+          <p class="title">Мы обязательно вам ответим!</p>
+          <input id="fullname-field" type="text" name="fullname" required>
+          <label for="fullname-field">Как вас зовут?</label>
+          <input id="email-field" type="email" name="email" required>
+          <label for="email-field">Ваша почта для ответа?</label>
+          <textarea name="letter" id="letter-field" required></textarea>
+          <label for="letter-field">Напишите что-нибудь...</label>
+          <input class="btn btn-form" type="submit" value="Отправить">
+        </form>
+      </div>
     </div>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>

@@ -5,7 +5,7 @@
     <title>Глэйси: каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper catalog-wrapper">
@@ -48,7 +48,7 @@
                 <a class="button-search" href="#"><span class="visually-hidden">Поиск</span></a>
                 <div class="modal-search">
                   <form action="#" method="post">
-                    <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+                    <input type="search" name="search" id="search-field" required>
                     <label>Что ищем?</label>
                   </form>
                 </div>
@@ -57,14 +57,14 @@
                 <a class="button-login" href="#">Вход</a>
                 <div class="modal-login">
                   <form action="#" method="post">
-                    <input id="login-field" type="email" name="login" placeholder="Электронная почта">
+                    <input id="login-field" type="email" name="login" required>
                     <label for="login-field">Электронная почта</label>
-                    <input id="password-field" type="password" name="password" placeholder="Пароль">
+                    <input id="password-field" type="password" name="password" required>
                     <label for="password-field">Пароль</label>
                     <input class="btn btn-login" type="submit" value="Войти">
                     <div class="login-links">
-                      <a href="#"><span class="underline">Забыли пароль?</span></a>
-                      <a href="#"><span class="underline">Новая регистрация</span></a>
+                      <a class="modal-link" href="#"><span class="underline">Забыли пароль?</span></a>
+                      <a class="modal-link" href="#"><span class="underline">Новая регистрация</span></a>
                     </div>
                   </form>
                 </div>
@@ -120,7 +120,7 @@
 
         <h1 class="inner-title">Сливочное мороженое</h1>
 
-        <form class="creamy-filter" action="#" method="post">
+        <form class="creamy-filter" action="https://echo.htmlacademy.ru" method="post">
           <div class="sort-filter">
             <label for="sort-1">Сортировка:</label>
             <select name="sort" id="sort-1">
@@ -276,10 +276,10 @@
           <div class="paginator">
             <a class="prev"><span class="visually-hidden">Назад</span></a>
             <a class="active-page">1</a>
-            <a class="unit-page"href="#">2</a>
-            <a class="unit-page"href="#">3</a>
-            <a class="unit-page"href="#">4</a>
-            <a class="unit-page"href="#">5</a>
+            <a class="unit-page" href="#">2</a>
+            <a class="unit-page" href="#">3</a>
+            <a class="unit-page" href="#">4</a>
+            <a class="unit-page" href="#">5</a>
             <a class="next" href="#"><span class="visually-hidden">Вперед</span></a>
           </div>
         </main>
@@ -304,6 +304,6 @@
         </footer> 
       </div>
     </div>
-  
+
   </body>
 </html>
