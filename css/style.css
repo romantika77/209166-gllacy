@@ -68,7 +68,7 @@ body > input[type="radio"] {
   border-radius: 100px;
   cursor: pointer;
 }
- 
+
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.2);
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ec6e5d), to(#f58669));
@@ -117,11 +117,11 @@ body > input[type="radio"] {
 }
 
 .site-wrapper::before {
-  background-image: url("slide-2.png");
+  background-image: url("../img/slider-2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("slide-3.png");
+  background-image: url("../img/slider-3.png");
 }
 
 .content-wrapper {
@@ -162,7 +162,7 @@ body > input[type="radio"] {
   max-width: 293px;
   margin-left: auto;
   /*text-align: right;*/
-} 
+}
 
 .catalog:hover .sub-menu {
   visibility: visible;
@@ -386,7 +386,7 @@ body > input[type="radio"] {
 .modal-search input[type="search"] + label {
   bottom: 30px;
   left: 30px;
-} 
+}
 
 .modal-search input[type="search"]:focus + label,
 .modal-search input[type="search"]:valid + label {
@@ -409,7 +409,7 @@ body > input[type="radio"] {
 .modal-feedback input[type="email"] + label {
   top: 123px;
   left: 17px;
-} 
+}
 
 .modal-feedback input[type="text"]:focus + label {
   font-size: 11px;
@@ -825,7 +825,7 @@ body > input[type="radio"] {
           transform: rotate(180deg);
   opacity: 0.2;
 }
- 
+
 .paginator .next {
   margin-left: 10px;
 }
@@ -1014,7 +1014,7 @@ body > input[type="radio"] {
 
 .subscribe input[type="email"]:valid + label {
   color: #999999;
-} 
+}
 
 .subscribe input[type="email"]:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
@@ -1276,7 +1276,7 @@ label[for="sort-1"] {
   background-repeat: no-repeat;
   background-position: -20.5px -1025px;
   border: none;
-} 
+}
 
 .fat-container input[type="radio"]:checked + label:hover::after {
   background-position: -20px -963px;
@@ -1497,15 +1497,15 @@ label[for="sort-1"] {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-} 
- 
+}
+
 .name-orange::before {
   background-image: url("../img/icecream-sm-1.png");
 }
 
 .name-strawberry::before {
   background-image: url("../img/icecream-sm-2.png");
-} 
+}
 
 .modal-basket p {
   margin: 0;
@@ -1835,17 +1835,17 @@ label[for="sort-1"] {
 }
 
 .social-btn:active {
-  -webkit-box-shadow: 
+  -webkit-box-shadow:
   inset 0 2px 0 0 rgb(131, 157, 143),
   0 0 0 3px rgba(255, 255, 255, 0.5);
-          box-shadow: 
+          box-shadow:
   inset 0 2px 0 0 rgb(131, 157, 143),
   0 0 0 3px rgba(255, 255, 255, 0.5);
 }
 
 .social-btn-tw {
   background-position: -20px -1367.5px;
-}  
+}
 
 .social-btn-fb {
   background-position: -20px -469.5px;
